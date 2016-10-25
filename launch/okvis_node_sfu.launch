@@ -1,0 +1,7 @@
+<launch>
+  <node name="okvis_node" pkg="okvis_ros" type="okvis_node" output="screen">
+    <param name="config_filename" value="/home/jamesgarforth/Repos/okvis_ros/okvis/config/sfu_left.yaml" />
+    <remap from="/camera0" to="/camera/image_raw" />
+    <remap from="/imu" to="/imu/data" />
+  </node>
+</launch>
