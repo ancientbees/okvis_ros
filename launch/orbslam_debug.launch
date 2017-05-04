@@ -1,0 +1,3 @@
+<launch>
+  <node name="Mono" pkg="ORB_SLAM2" type="Mono" args="/home/jamesgarforth/Repos/ORB_SLAM2/Vocabulary/ORBvoc.txt /home/jamesgarforth/Repos/ORB_SLAM2/Examples/Monocular/Ants.yaml" launch-prefix="xterm -e gdb --args"/>
+</launch>

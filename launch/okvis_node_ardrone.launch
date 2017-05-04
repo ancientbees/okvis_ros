@@ -1,0 +1,7 @@
+<launch>
+  <node name="okvis_node" pkg="okvis_ros" type="okvis_node" output="screen">
+    <param name="config_filename" value="/home/jamesgarforth/Repos/okvis_ros/okvis/config/ardrone.yaml" />
+    <remap from="/camera0" to="/ardrone/image_raw" />
+    <remap from="/imu" to="/ardrone/imu" />
+  </node>
+</launch>
